@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "company":"Jakks Pacific",
+        "position": "Web Designer",
+        "date_rage":"2022-23",
+        "description":"I revamped the company website with Figma, creating pages and components. Developed a theme library, utilized Radzen Blazor, attended daily huddle meetings via Jira, and worked remotely with occasional in-office meetings."
+    },
+    {
+        "id": 2,
+        "company":"Wow Events",
+        "position": "Web Designer/Developer",
+        "date_rage":"2021-22",
+        "description":"Crafted and developed a website for a local business, expanding its online presence with React and Bootstrap. Integrated a third-party booking app and curated all content, including photography."
+    },
+    {
+        "id": 3,
+        "company":"E-Gallery Wholesale",
+        "position": "Marketing Manager",
+        "date_rage":"2016-20",
+        "description":"Promoted to a leadership role, I oversaw a team managing the company's online presence, including the e-commerce site, marketing emails, social media, print assets, and promotional events."
+    },
+        {
+        "id": 4,
+        "company":"Burger Monster",
+        "position": "Office/Sales Office",
+        "date_rage":"2013-16",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget leo vel justo blandit tincidunt. Vivamus commodo ex ut risus fermentum, eu cursus odio gravida. Aliquam erat volutpat. Sed in felis vel turpis fermentum varius."
+    }
+]
