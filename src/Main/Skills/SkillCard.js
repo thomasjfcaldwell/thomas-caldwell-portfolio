@@ -8,7 +8,7 @@ export default function SkillCard() {
 			<h4>SkillCard</h4>
 			{Skills.map((skill) => {
 				return (
-					<div>
+					<div key={skill.id}>
 						<h5>{skill.title}</h5>
 					</div>
 				);

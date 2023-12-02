@@ -8,7 +8,7 @@ export default function Project() {
 			<h4>Project</h4>
 			{Projects.map((data) => {
 				return (
-					<div>
+					<div key={data.id}>
 						<h5>{data.title}</h5>
 					</div>
 				);

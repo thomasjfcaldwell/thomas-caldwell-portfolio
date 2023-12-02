@@ -32,9 +32,3 @@ h4 {
 h5 {
   color: palegreen;
 }
-
-.job_container {
-  display:flex;
-  flex-direction: column;
-  background-color: bisque;
-}
