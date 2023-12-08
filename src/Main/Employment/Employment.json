@@ -4,14 +4,16 @@
         "company":"Jakks Pacific",
         "position": "Web Designer",
         "date_rage":"2022-23",
-        "description":"I revamped the company website with Figma, creating pages and components. Developed a theme library, utilized Radzen Blazor, attended daily huddle meetings via Jira, and worked remotely with occasional in-office meetings."
+        "description":"I revamped the company website with Figma, creating pages and components. Developed a theme library, utilized Radzen Blazor, attended daily huddle meetings via Jira, and worked remotely with occasional in-office meetings.",
+        "indepth_description": "Employing Figma, I meticulously revamped the company website, designing and implementing pages and components for an enhanced user experience. To ensure visual consistency, I crafted a comprehensive theme library. Leveraging Radzen Blazor for its dynamic capabilities, I seamlessly integrated efficient functionalities. Daily huddle meetings were conducted via Teams, facilitating seamless collaboration. Jira played a pivotal role in streamlined product management. Embracing a flexible work approach, I operated remotely, with intermittent in-office meetings for focused collaboration and project refinement"
     },
     {
         "id": 2,
         "company":"Wow Events",
         "position": "Web Designer/Developer",
         "date_rage":"2021-22",
-        "description":"Crafted and developed a website for a local business, expanding its online presence with React and Bootstrap. Integrated a third-party booking app and curated all content, including photography."
+        "description":"Crafted and developed a website for a local business, expanding its online presence with React and Bootstrap. Integrated a third-party booking app and curated all content, including photography.",
+        "indepth_description": "With meticulous attention to detail, I conceived and executed a comprehensive website for a local business, strategically enhancing its digital footprint through the implementation of cutting-edge technologies such as React and Bootstrap. The development process involved not only creating a visually engaging and responsive site but also integrating a third-party booking application seamlessly, thus elevating the user experience and functionality. To enrich the site's content, I curated a diverse range of media, including captivating photography meticulously chosen to align with the brand's identity and enhance user engagement. This holistic approach aimed to establish a compelling and immersive online presence for the local business, fostering a meaningful connection with its target audience."
     },
     {
         "id": 3,
