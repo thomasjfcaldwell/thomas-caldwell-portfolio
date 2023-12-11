@@ -1,13 +1,11 @@
 import React from 'react';
 import SkillCard from './SkillCard';
-
+import { Container, Heading } from '@chakra-ui/react';
 export default function Skills() {
 	return (
-		<div className='skills'>
-			<div>
-				<h3>Skills</h3>
-				<SkillCard />
-			</div>
-		</div>
+		<Container className='skills'>
+			<Heading as='h2'>Skills</Heading>
+			<SkillCard />
+		</Container>
 	);
 }

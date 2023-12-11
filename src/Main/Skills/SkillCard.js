@@ -1,18 +1,18 @@
 import React from 'react';
-
+import { Container, Heading, Box } from '@chakra-ui/react';
 import Skills from './Skills.json';
 
 export default function SkillCard() {
 	return (
-		<div>
-			<h4>SkillCard</h4>
+		<Container>
+			<Heading as='h3'>SkillCard</Heading>
 			{Skills.map((skill) => {
 				return (
-					<div key={skill.id}>
-						<h5>{skill.title}</h5>
-					</div>
+					<Box key={skill.id}>
+						<Heading as='h5'>{skill.title}</Heading>
+					</Box>
 				);
 			})}
-		</div>
+		</Container>
 	);
 }
