@@ -1,18 +1,20 @@
 import React from 'react';
-
+import { Card, CardHeader, Container, Heading } from '@chakra-ui/react';
 import Projects from './Projects.json';
 
 export default function Project() {
 	return (
-		<div>
-			<h4>Project</h4>
+		<Container>
+			<Heading>Project</Heading>
 			{Projects.map((data) => {
 				return (
-					<div key={data.id}>
-						<h5>{data.title}</h5>
-					</div>
+					<Card key={data.id}>
+						<CardHeader>
+							<Heading as='h5'>{data.title}</Heading>
+						</CardHeader>
+					</Card>
 				);
 			})}
-		</div>
+		</Container>
 	);
 }
