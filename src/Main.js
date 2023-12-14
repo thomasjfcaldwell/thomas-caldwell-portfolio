@@ -3,13 +3,11 @@ import Work from './Main/Work/Work';
 import Employment from './Main/Employment/Employment';
 import Skills from './Main/Skills/Skills';
 import Contact from './Main/Contact/Contact';
-import { Button, Container, Heading } from '@chakra-ui/react';
+import { Container } from '@chakra-ui/react';
 
 function Main() {
 	return (
-		<Container as='section' className='main' bg='blue.600'>
-			<Heading>Main</Heading>
-			<Button bg='brand.900'>Click on me!</Button>
+		<Container as='section' className='main' bg='blue.600' padding={5}>
 			<Intro />
 			<Work />
 			<Employment />

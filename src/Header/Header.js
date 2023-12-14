@@ -1,15 +1,16 @@
 import Logo from './Logo/Logo';
 import Navigation from './Navigation/Navigation';
-
+import { Flex } from '@chakra-ui/react';
 function Header() {
 	return (
-		<div className='header'>
-			<div>
-				<h2>Header</h2>
-				<Logo />
-				<Navigation />
-			</div>
-		</div>
+		<Flex
+			className='header'
+			padding={'1.5em'}
+			alignItems={'center'}
+			justifyContent={'space-between'}>
+			<Logo />
+			<Navigation />
+		</Flex>
 	);
 }
 

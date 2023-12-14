@@ -1,17 +1,28 @@
-import { Container, Heading, Text } from '@chakra-ui/react';
+import { Button, Flex, Heading, Image, Text } from '@chakra-ui/react';
+import thomasPhoto from '../../Images/portfolioPhoto.jpg';
 
 function Intro() {
 	return (
-		<Container as='section' className='intro'>
-			<Heading as='h3'>Hi Name is Thomas</Heading>
-			<Text>
-				Experienced web designer proficient in HTML, CSS,
-				JavaScript,React,Figma, and Adobe Creative Cloud. Proven track record in
-				daily meetings, Jira usage, and successful collaboration with in-house
-				and outsourced teams. Mature, hardworking, and committed to continuous
-				learning
+		<Flex
+			as='section'
+			className='intro'
+			flexDirection={'column'}
+			alignItems={'center'}>
+			<Heading as='h2' fontSize={'x-large'} padding={5}>
+				Hi, I am Thomas Caldwell, A Full-Stack Designer
+			</Heading>
+			<Flex width={'100%'} justifyContent={'center'}>
+				<Image src={thomasPhoto} alt='Photo Of Thomas' />
+			</Flex>
+			<Text padding={5} fontSize={'large'}>
+				I am a committed and proficient designer with expertise in coding. My
+				capabilities extend to planning, designing, and developing modern,
+				functional websites
 			</Text>
-		</Container>
+			<Button marginBlock={'50px'} colorScheme='green'>
+				Download Resume
+			</Button>
+		</Flex>
 	);
 }
 
