@@ -10,10 +10,12 @@ import {
 } from '@chakra-ui/react';
 export default function Position() {
 	return (
-		<Flex flexDirection={'column'}>
+		<Flex
+			flexDirection={{ base: 'column', md: 'row' }}
+			justify={'space-between'}>
 			{Jobs.map((job) => {
 				return (
-					<Card className='job_card' key={job.id}>
+					<Card className='job_card' key={job.id} width={'fill'} padding={1}>
 						<CardHeader>
 							<Heading as='h5' fontSize='large'>
 								{job.company}

@@ -3,17 +3,23 @@ import Work from './Main/Work/Work';
 import Employment from './Main/Employment/Employment';
 import Skills from './Main/Skills/Skills';
 import Contact from './Main/Contact/Contact';
-import { Container } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
 
 function Main() {
+	const mainStyle = {
+		bg: 'blue.600',
+		flexDirection: 'column',
+		p: '5',
+		m: '0',
+	};
 	return (
-		<Container as='section' className='main' bg='blue.600' padding={5}>
+		<Flex as='main' sx={mainStyle}>
 			<Intro />
 			<Work />
 			<Employment />
 			<Skills />
 			<Contact />
-		</Container>
+		</Flex>
 	);
 }
 

@@ -1,12 +1,16 @@
 import React from 'react';
 import Project from './Project';
-import { Container, Heading } from '@chakra-ui/react';
+import { Flex, Heading } from '@chakra-ui/react';
 
 export default function Work() {
 	return (
-		<Container as='section' className='work'>
+		<Flex
+			as='section'
+			className='work'
+			backgroundColor={'green'}
+			flexDirection={'column'}>
 			<Heading as='h3'>Work</Heading>
 			<Project />
-		</Container>
+		</Flex>
 	);
 }

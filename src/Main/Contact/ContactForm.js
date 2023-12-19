@@ -1,9 +1,9 @@
 import React from 'react';
-import { Container, Heading } from '@chakra-ui/react';
+import { Flex, Heading } from '@chakra-ui/react';
 export default function ContactForm() {
 	return (
-		<Container>
+		<Flex>
 			<Heading as='h4'>ContactForm</Heading>
-		</Container>
+		</Flex>
 	);
 }

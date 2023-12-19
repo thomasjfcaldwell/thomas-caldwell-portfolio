@@ -1,5 +1,6 @@
 import { Button, Flex, Heading, Image, Text } from '@chakra-ui/react';
 import thomasPhoto from '../../Images/portfolioPhoto.jpg';
+import Toggle from './Toggle';
 
 function Intro() {
 	return (
@@ -7,7 +8,8 @@ function Intro() {
 			as='section'
 			className='intro'
 			flexDirection={'column'}
-			alignItems={'center'}>
+			alignItems={'center'}
+			backgroundColor={'pink'}>
 			<Heading as='h2' fontSize={'x-large'} padding={5}>
 				Hi, I am Thomas Caldwell, A Full-Stack Designer
 			</Heading>
@@ -19,6 +21,9 @@ function Intro() {
 				capabilities extend to planning, designing, and developing modern,
 				functional websites
 			</Text>
+			<Flex>
+				<Toggle />
+			</Flex>
 			<Button marginBlock={'50px'} colorScheme='green'>
 				Download Resume
 			</Button>
