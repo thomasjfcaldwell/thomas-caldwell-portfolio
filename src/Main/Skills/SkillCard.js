@@ -18,6 +18,10 @@ import CssIcon from './SkillsIcons/CssIcon';
 import JavascriptIcon from './SkillsIcons/JavascriptIcon';
 import BootstrapIcon from './SkillsIcons/BootstrapIcon';
 import ReactIcon from './SkillsIcons/ReactIcon';
+import ChromeIcon from './SkillsIcons/ChromeIcon';
+import VsIcon from './SkillsIcons/VsIcon';
+import Windows from './SkillsIcons/Windows';
+import ZoomIcon from './SkillsIcons/ZoomIcon';
 
 export default function SkillCard() {
 	const skillTextStyle = {
@@ -93,16 +97,18 @@ export default function SkillCard() {
 			</Flex>
 			<Flex direction='column' p={5} backgroundColor={'green'} gap={5}>
 				<HStack>
-					{/* <Center>
+					<Center>
 						<ChromeIcon />
 					</Center>
 					<Center>
 						<VsIcon />
 					</Center>
-					<Center><Windows /></Center>
+					<Center>
+						<Windows />
+					</Center>
 					<Center>
 						<ZoomIcon />
-					</Center> */}
+					</Center>
 				</HStack>
 				<Box>
 					<Heading as='h5' fontSize={'16px'}>

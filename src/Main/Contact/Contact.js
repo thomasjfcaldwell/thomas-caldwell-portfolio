@@ -1,13 +1,15 @@
 import React from 'react';
-import { Flex, Heading } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
 import ContactForm from './ContactForm';
 
 export default function Contact() {
 	return (
-		<Flex as='section' className='contact' backgroundColor={'yellow'}>
-			<Heading as='h3' fontSize={'smaller'}>
-				Contact
-			</Heading>
+		<Flex
+			as='section'
+			className='contact'
+			backgroundColor={'yellow'}
+			justify={'center'}
+			p={5}>
 			<ContactForm />
 		</Flex>
 	);
