@@ -5,7 +5,9 @@ import ContactForm from './ContactForm';
 export default function Contact() {
 	return (
 		<Flex as='section' className='contact' backgroundColor={'yellow'}>
-			<Heading as='h3'>Contact</Heading>
+			<Heading as='h3' fontSize={'smaller'}>
+				Contact
+			</Heading>
 			<ContactForm />
 		</Flex>
 	);

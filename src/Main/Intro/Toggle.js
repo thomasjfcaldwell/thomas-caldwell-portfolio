@@ -10,11 +10,11 @@ export default function Toggle() {
 		<>
 			<Flex>
 				<Button {...buttonProps}>Toggle Me</Button>
-				<Text {...disclosureProps} mt={4}>
+				{/* <Text {...disclosureProps} mt={4}>
 					This text is being visibly toggled hidden and shown by the button.
 					<br />
 					(Inspect these components to see the rendered attributes)
-				</Text>
+				</Text> */}
 			</Flex>
 		</>
 	);

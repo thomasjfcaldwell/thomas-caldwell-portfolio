@@ -1,6 +1,5 @@
 import { Button, Flex, Heading, Image, Text } from '@chakra-ui/react';
 import thomasPhoto from '../../Images/portfolioPhoto.jpg';
-import Toggle from './Toggle';
 
 function Intro() {
 	return (
@@ -21,9 +20,6 @@ function Intro() {
 				capabilities extend to planning, designing, and developing modern,
 				functional websites
 			</Text>
-			<Flex>
-				<Toggle />
-			</Flex>
 			<Button marginBlock={'50px'} colorScheme='green'>
 				Download Resume
 			</Button>

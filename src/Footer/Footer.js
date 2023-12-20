@@ -10,7 +10,6 @@ import { List, ListItem, ListIcon } from '@chakra-ui/react';
 function Footer() {
 	const footerLinkStyle = {
 		fontWeight: 'bold',
-		fontSize: '12px',
 	};
 
 	const footLink = [
@@ -44,54 +43,66 @@ function Footer() {
 		},
 	];
 	return (
-		<Flex padding={2} direction={'column'} as='footer'>
+		<Flex
+			direction={'column'}
+			padding={{ base: 2, md: 8, lg: 10 }}
+			as='footer'
+			gap={9}>
 			{/* Top Area */}
-			<Flex direction={'column'}>
-				<Heading as='h3' fontSize={'24px'} fontWeight={'bold'}>
-					Thomas Caldwell
-				</Heading>
-				<List display='flex' padding={1}>
-					<ListItem>
-						<ListIcon as={LinkedinOutlined} rotate={180} />
-					</ListItem>
-					<ListItem>
-						<ListIcon as={MailOutlined} />
-					</ListItem>
-					<ListItem>
-						<ListIcon as={PhoneOutlined} />
-					</ListItem>
-					<ListItem>
-						<ListIcon as={GithubOutlined} />
-					</ListItem>
-				</List>
-			</Flex>
-			{/* Middle Area */}
-			<Flex gap={10}>
-				<Flex direction='column'>
-					<List>
-						{footLink.slice(0, 4).map((item) => {
-							return (
-								<ListItem sx={footerLinkStyle} key={item.id}>
-									{item.link}
-								</ListItem>
-							);
-						})}
+			<Flex
+				direction={{ base: 'column', md: 'row' }}
+				justify={{ base: 'start', md: 'space-between' }}
+				gap={8}>
+				<Flex direction={'column'}>
+					<Heading
+						as='h3'
+						fontSize={{ base: '24px', md: '40px', lg: '56px' }}
+						fontWeight={'bold'}>
+						thomas caldwell
+					</Heading>
+					<List display='flex' padding={1}>
+						<ListItem as='a' href='https://chakra-ui.com'>
+							<ListIcon as={LinkedinOutlined} color='gray.400' />
+						</ListItem>
+						<ListItem>
+							<ListIcon as={MailOutlined} color='gray.400' />
+						</ListItem>
+						<ListItem>
+							<ListIcon as={PhoneOutlined} color='gray.400' />
+						</ListItem>
+						<ListItem>
+							<ListIcon as={GithubOutlined} color='gray.400' />
+						</ListItem>
 					</List>
 				</Flex>
-				<Flex direction='column'>
-					<List>
-						{footLink.slice(4, 7).map((item) => {
-							return (
-								<ListItem sx={footerLinkStyle} key={item.id}>
-									{item.link}
-								</ListItem>
-							);
-						})}
-					</List>
+				{/* Middle Area */}
+				<Flex gap={20}>
+					<Flex direction='column'>
+						<List>
+							{footLink.slice(0, 4).map((item) => {
+								return (
+									<ListItem sx={footerLinkStyle} key={item.id}>
+										{item.link}
+									</ListItem>
+								);
+							})}
+						</List>
+					</Flex>
+					<Flex direction='column'>
+						<List>
+							{footLink.slice(4, 7).map((item) => {
+								return (
+									<ListItem sx={footerLinkStyle} key={item.id}>
+										{item.link}
+									</ListItem>
+								);
+							})}
+						</List>
+					</Flex>
 				</Flex>
 			</Flex>
 			{/* Bottom Area */}
-			<Flex>
+			<Flex justify='center'>
 				<Heading as='h5' fontSize={'smaller'}>
 					Copyright 2023 • Thomas Caldwell{' '}
 				</Heading>
