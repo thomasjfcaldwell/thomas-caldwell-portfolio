@@ -1,4 +1,11 @@
-import { Button, Flex, Heading, Image, Text } from '@chakra-ui/react';
+import {
+	Button,
+	Flex,
+	Heading,
+	Image,
+	Text,
+	ButtonGroup,
+} from '@chakra-ui/react';
 import thomasPhoto from '../../Images/portfolioPhoto.jpg';
 
 function Intro() {
@@ -8,21 +15,42 @@ function Intro() {
 			className='intro'
 			flexDirection={'column'}
 			alignItems={'center'}
-			backgroundColor={'pink'}>
-			<Heading as='h2' fontSize={'x-large'} padding={5}>
-				Hi, I am Thomas Caldwell, A Full-Stack Designer
-			</Heading>
-			<Flex width={'100%'} justifyContent={'center'}>
+			backgroundColor={'green'}
+			gap={9}
+			margin='2rem 0'>
+			<Flex className='hero-heading'>
+				<Heading as='h2' fontSize={'x-large'} font-weight={'regular'}>
+					Hi, I am Thomas Caldwell, A Full-Stack Designer
+				</Heading>
+			</Flex>
+			<Flex width={'100%'} justifyContent={'center'} className='hero-image'>
 				<Image src={thomasPhoto} alt='Photo Of Thomas' />
 			</Flex>
-			<Text padding={5} fontSize={'large'}>
-				I am a committed and proficient designer with expertise in coding. My
-				capabilities extend to planning, designing, and developing modern,
-				functional websites
-			</Text>
-			<Button marginBlock={'50px'} colorScheme='green'>
-				Download Resume
-			</Button>
+			<Flex className='hero-text'>
+				<Text
+					color={'var(--gray-500, #718096)'}
+					fontFamily={'Poppins'}
+					fontSize={'14px'}
+					fontStyle={'normal'}
+					fontWeight={'500'}
+					lineHeight={'20px'}>
+					I am a committed and proficient designer with expertise in coding. My
+					capabilities extend to planning, designing, and developing modern,
+					functional websites
+				</Text>
+			</Flex>
+			<ButtonGroup
+				className='hero-buttons'
+				spacing={4}
+				direction='row'
+				align='center'>
+				<Button colorScheme='green' size='lg'>
+					Resume
+				</Button>
+				<Button colorScheme='purple' size='lg'>
+					See Projects
+				</Button>
+			</ButtonGroup>
 		</Flex>
 	);
 }

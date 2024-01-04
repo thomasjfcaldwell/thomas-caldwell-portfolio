@@ -9,7 +9,7 @@ function Main() {
 	const mainStyle = {
 		bg: 'blue.600',
 		flexDirection: 'column',
-		p: '5',
+		p: '2',
 		m: '0',
 	};
 	return (
