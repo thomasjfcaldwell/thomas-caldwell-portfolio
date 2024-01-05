@@ -7,7 +7,7 @@ import { Flex } from '@chakra-ui/react';
 
 function Main() {
 	const mainStyle = {
-		bg: 'blue.600',
+		bg: 'gray.300',
 		flexDirection: 'column',
 		p: '2',
 		m: '0',

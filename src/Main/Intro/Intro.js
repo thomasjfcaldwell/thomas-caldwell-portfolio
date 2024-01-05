@@ -19,14 +19,14 @@ function Intro() {
 			gap={9}
 			margin='2rem 0'>
 			<Flex className='hero-heading'>
-				<Heading as='h2' fontSize={'x-large'} font-weight={'regular'}>
+				<Heading as='h2' fontSize={'x-large'} fontWeight={'700'} p={1}>
 					Hi, I am Thomas Caldwell, A Full-Stack Designer
 				</Heading>
 			</Flex>
 			<Flex width={'100%'} justifyContent={'center'} className='hero-image'>
 				<Image src={thomasPhoto} alt='Photo Of Thomas' />
 			</Flex>
-			<Flex className='hero-text'>
+			<Flex className='hero-text' p={5}>
 				<Text
 					color={'var(--gray-500, #718096)'}
 					fontFamily={'Poppins'}
