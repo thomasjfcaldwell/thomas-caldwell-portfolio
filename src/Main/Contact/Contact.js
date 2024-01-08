@@ -4,12 +4,7 @@ import ContactForm from './ContactForm';
 
 export default function Contact() {
 	return (
-		<Flex
-			as='section'
-			className='contact'
-			backgroundColor={'yellow'}
-			justify={'center'}
-			p={5}>
+		<Flex as='section' className='contact' justify={'center'} p={1}>
 			<ContactForm />
 		</Flex>
 	);

@@ -7,7 +7,6 @@ import { Flex } from '@chakra-ui/react';
 
 function Main() {
 	const mainStyle = {
-		bg: 'gray.300',
 		flexDirection: 'column',
 		p: '2',
 		m: '0',
@@ -15,7 +14,7 @@ function Main() {
 	return (
 		<Flex as='main' sx={mainStyle}>
 			<Intro />
-			<Work />
+			{/* <Work /> */}
 			<Employment />
 			<Skills />
 			<Contact />

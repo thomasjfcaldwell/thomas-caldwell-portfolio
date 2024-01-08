@@ -2,7 +2,7 @@
     {
         "id": 1,
         "company":"Jakks Pacific",
-        "location":"- Santa Monica, CA",
+        "location":" - Santa Monica, CA",
         "position": "Web Designer",
         "date_rage":"2022-23",
         "description":"I revamped the company website with Figma, creating pages and components. Developed a theme library, utilized Radzen Blazor, attended daily huddle meetings via Jira, and worked remotely with occasional in-office meetings.",
@@ -11,7 +11,7 @@
     {
         "id": 2,
         "company":"Wow Events",
-        "location":"- Huntington Beach, CA",
+        "location":" - Huntington Beach, CA",
         "position": "Web Designer/Developer",
         "date_rage":"2021-22",
         "description":"Crafted and developed a website for a local business, expanding its online presence with React and Bootstrap. Integrated a third-party booking app and curated all content, including photography.",
@@ -19,7 +19,7 @@
     },
     {
         "id": 3,
-        "company":"E-Gallery Wholesale",
+        "company":"E-Gallery Wholesale ",
         "location":"- Irvine, CA ",
         "position": "Marketing Manager",
         "date_rage":"2016-20",
@@ -28,9 +28,9 @@
         {
         "id": 4,
         "company":"Burger Monster",
-        "location":"- Anaheim, CA ",
+        "location":" - Anaheim, CA ",
         "position": "Office/Sales Office",
         "date_rage":"2013-16",
-        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget leo vel justo blandit tincidunt. Vivamus commodo ex ut risus fermentum, eu cursus odio gravida. Aliquam erat volutpat. Sed in felis vel turpis fermentum varius."
+        "description":"Employed as Office & Sales Manager. Responsible for sales of catering events to corporate and private events. Management of social media & menu design "
     }
 ]

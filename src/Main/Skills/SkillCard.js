@@ -31,9 +31,16 @@ export default function SkillCard() {
 		lineHeight: '16px' /* 133.333% */,
 	};
 
+	const skillCardStyle = {
+		padding: '1rem',
+		gap: '1rem',
+		flexDirection: 'column',
+		border: '1px black',
+	};
+
 	return (
-		<Container>
-			<Flex direction='column' p={5} backgroundColor={'green'} gap={5}>
+		<Container p={1} gap={5} borderRadius={2}>
+			<Flex sx={skillCardStyle}>
 				<HStack>
 					<Center>
 						<FigmaIcon />
@@ -64,7 +71,7 @@ export default function SkillCard() {
 					</Text>
 				</Box>
 			</Flex>
-			<Flex direction='column' p={5} backgroundColor={'green'} gap={5}>
+			<Flex sx={skillCardStyle}>
 				<HStack>
 					<Center>
 						<HtmlIcon />
@@ -95,7 +102,7 @@ export default function SkillCard() {
 					</Text>
 				</Box>
 			</Flex>
-			<Flex direction='column' p={5} backgroundColor={'green'} gap={5}>
+			<Flex sx={skillCardStyle}>
 				<HStack>
 					<Center>
 						<ChromeIcon />

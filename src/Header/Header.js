@@ -3,7 +3,6 @@ import Navigation from './Navigation/Navigation';
 import { Flex } from '@chakra-ui/react';
 function Header() {
 	const headerStyle = {
-		bg: 'gray.300',
 		flexDirection: 'row',
 		padding: '1rem',
 		justifyContent: 'space-between',

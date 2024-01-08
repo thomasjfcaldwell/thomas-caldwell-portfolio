@@ -1,15 +1,9 @@
 import React from 'react';
-import {
-	Flex,
-	FormControl,
-	FormLabel,
-	Input,
-	Textarea,
-} from '@chakra-ui/react';
+import { Box, FormControl, FormLabel, Input, Textarea } from '@chakra-ui/react';
 
 export default function ContactForm() {
 	return (
-		<Flex direction={'column'} backgroundColor={'grey'} p={10}>
+		<Box width={'100%'} padding={2}>
 			<FormControl>
 				<FormLabel>Name</FormLabel>
 				<Input variant='flushed' type='text' size='sm' />
@@ -22,6 +16,6 @@ export default function ContactForm() {
 				<FormLabel>Message</FormLabel>
 				<Textarea size='lg' type='text' />
 			</FormControl>
-		</Flex>
+		</Box>
 	);
 }
