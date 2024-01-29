@@ -18,9 +18,7 @@ function Intro() {
 			gap={9}
 			margin='2rem 0'>
 			<Flex className='hero-heading'>
-				<Heading
-					as='h2'
-					fontSize={{ base: '23px', sm: '23px', md: '35px', lg: '50px' }}>
+				<Heading as='h2' fontSize={{ base: '23px', md: '35px', lg: '50px' }}>
 					Hi, I am Thomas Caldwell, A Full-Stack Designer
 				</Heading>
 			</Flex>
@@ -29,7 +27,7 @@ function Intro() {
 				justifyContent={'center'}
 				borderRadius={2}
 				className='hero-image'>
-				<Image src={thomasPhoto} alt='Photo Of Thomas' borderRadius={99} />
+				<Image src={thomasPhoto} alt='Photo Of Thomas' />
 			</Flex>
 			<Flex className='hero-text' p={5}>
 				<Text
