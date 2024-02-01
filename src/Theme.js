@@ -14,8 +14,7 @@ const theme = extendTheme({
 				},
 			},
 			h2: {
-				backgroundColor: 'blue.100',
-				color: 'white',
+				color: 'black.500',
 			},
 		},
 	},
