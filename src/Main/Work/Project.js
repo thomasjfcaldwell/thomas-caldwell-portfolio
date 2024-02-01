@@ -1,22 +1,36 @@
 import React from 'react';
-import { Card, CardHeader, Flex, Heading } from '@chakra-ui/react';
+import { Flex, Heading } from '@chakra-ui/react';
+import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react';
 import Projects from './Projects.json';
+import Picnics from './Picnics';
+import Game from './Game';
+import QuickAndEasy from './QuickAndEasy';
 
 export default function Project() {
+	const tabStyle = {
+		fontSize: '10px',
+		p: '1em',
+	};
 	return (
 		<Flex direction='column'>
-			<Heading>Project</Heading>
-			<Flex direction={{ base: 'column', sm: 'row' }}>
-				{Projects.map((data) => {
-					return (
-						<Card key={data.id}>
-							<CardHeader>
-								<Heading as='h5'>{data.title}</Heading>
-							</CardHeader>
-						</Card>
-					);
-				})}
-			</Flex>
+			<Tabs>
+				<TabList>
+					<Tab sx={tabStyle}>Local Business Website</Tab>
+					<Tab sx={tabStyle}>Trivia Game</Tab>
+					<Tab sx={tabStyle}>E-Commerce Store</Tab>
+				</TabList>
+				<TabPanels>
+					<TabPanel>
+						<Picnics />
+					</TabPanel>
+					<TabPanel>
+						<Game />
+					</TabPanel>
+					<TabPanel>
+						<QuickAndEasy />
+					</TabPanel>
+				</TabPanels>
+			</Tabs>
 		</Flex>
 	);
 }

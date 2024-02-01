@@ -36,10 +36,13 @@ export default function SkillCard() {
 		gap: '1rem',
 		flexDirection: 'column',
 		border: '1px black',
+		width: '300px',
 	};
 
 	return (
-		<Container p={1} gap={5} borderRadius={2}>
+		<Flex
+			direction={{ base: 'column', lg: 'row' }}
+			justifyContent={{ lg: 'space-evenly' }}>
 			<Flex sx={skillCardStyle}>
 				<HStack>
 					<Center>
@@ -130,6 +133,6 @@ export default function SkillCard() {
 					</Text>
 				</Box>
 			</Flex>
-		</Container>
+		</Flex>
 	);
 }

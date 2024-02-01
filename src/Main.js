@@ -8,13 +8,14 @@ import { Flex } from '@chakra-ui/react';
 function Main() {
 	const mainStyle = {
 		flexDirection: 'column',
-		p: '2',
+		p: '1em',
 		m: '0',
+		gap: '20px',
 	};
 	return (
 		<Flex as='main' sx={mainStyle}>
 			<Intro />
-			{/* <Work /> */}
+			<Work />
 			<Employment />
 			<Skills />
 			<Contact />

@@ -1,15 +1,12 @@
 import React from 'react';
 import Project from './Project';
-import { Flex, Heading } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
+import SectionHeader from '../../SectionHeader';
 
 export default function Work() {
 	return (
-		<Flex
-			as='section'
-			className='work'
-			backgroundColor={'green'}
-			flexDirection={'column'}>
-			<Heading as='h3'>Work</Heading>
+		<Flex as='section' className='work' flexDirection={'column'}>
+			<SectionHeader title='My Projects' />
 			<Project />
 		</Flex>
 	);
