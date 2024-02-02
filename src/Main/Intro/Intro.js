@@ -21,11 +21,7 @@ function Intro() {
 				</Heading>
 			</Flex>
 			<Flex direction={{ base: 'column', md: 'row' }}>
-				<Flex
-					width={{ base: '100%' }}
-					justifyContent={'center'}
-					borderRadius={2}
-					className='hero-image'>
+				<Flex justifyContent={'center'} borderRadius={2} className='hero-image'>
 					<Image src={thomasPhoto} alt='Photo Of Thomas' />
 				</Flex>
 				<Flex direction={'column'}>
