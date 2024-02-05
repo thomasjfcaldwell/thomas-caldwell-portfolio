@@ -20,7 +20,7 @@ export default function Project() {
 					<Tab sx={tabStyle}>E-Commerce Store</Tab>
 				</TabList>
 				<TabPanels>
-					<TabPanel>
+					<TabPanel p={0} marginBlock={5}>
 						<Picnics />
 					</TabPanel>
 					<TabPanel>

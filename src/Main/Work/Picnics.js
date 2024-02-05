@@ -5,8 +5,8 @@ import React from 'react';
 
 export default function Picnics() {
 	return (
-		<Box p={2}>
-			<Grid templateColumns='repeat(2, 1fr)' gap={2}>
+		<Box>
+			<Grid templateColumns={{ base: '1fr', lg: '1fr 1fr' }} gap={2}>
 				<Box>
 					<Image />
 				</Box>
@@ -15,8 +15,14 @@ export default function Picnics() {
 						<CardHeader>
 							<Heading fontSize={'12px'}>Local Business Website</Heading>
 							<Box display={'flex'} gap={4}>
-								<Text color={'lightgrey'}>www.popup-picnics.com</Text>
-								<Text>2021 - Present</Text>
+								<Text
+									color={'lightgrey'}
+									fontSize={{ base: '10px', sm: '12px' }}>
+									www.popup-picnics.com
+								</Text>
+								<Text fontSize={{ base: '8px', sm: '12px' }}>
+									2021 - Present
+								</Text>
 							</Box>
 						</CardHeader>
 						<CardBody>
