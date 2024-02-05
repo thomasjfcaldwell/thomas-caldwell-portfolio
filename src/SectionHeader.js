@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function SectionHeader(props) {
 	return (
-		<Flex>
+		<Flex marginBlock={'1em'}>
 			<Heading>{props.title}</Heading>
 		</Flex>
 	);
