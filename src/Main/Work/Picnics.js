@@ -13,21 +13,15 @@ export default function Picnics() {
 				<Box>
 					<Card>
 						<CardHeader>
-							<Heading fontSize={'12px'}>Local Business Website</Heading>
+							<Heading as={'h4'}>Local Business Website</Heading>
 							<Box display={'flex'} gap={4}>
-								<Text
-									color={'lightgrey'}
-									fontSize={{ base: '10px', sm: '12px' }}>
-									www.popup-picnics.com
-								</Text>
-								<Text fontSize={{ base: '8px', sm: '12px' }}>
-									2021 - Present
-								</Text>
+								<Text as={'h4'}>www.popup-picnics.com</Text>
+								<Text as={'h5'}>2021 - Present</Text>
 							</Box>
 						</CardHeader>
 						<CardBody>
 							<Box>
-								<Text fontSize={'9px'}>
+								<Text as={'p'}>
 									Crafted for a local business adapting to government
 									restrictions, this project involved creating a dedicated
 									website to introduce and manage bookings for their new
@@ -35,7 +29,7 @@ export default function Picnics() {
 								</Text>
 							</Box>
 							<Box my={5}>
-								<Text fontSize={'9px'}>
+								<Text as={'p'}>
 									This venture entailed collaborative planning and design
 									sessions with the business owner, where Figma prototypes were
 									meticulously crafted for each page. The implementation phase

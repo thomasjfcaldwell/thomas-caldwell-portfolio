@@ -1,6 +1,6 @@
 import React from 'react';
 import { HamburgerIcon } from '@chakra-ui/icons';
-import { Box, Container } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import { useState, useEffect } from 'react';
 
 export default function Navigation() {
@@ -22,5 +22,9 @@ export default function Navigation() {
 }
 
 const Test = () => {
-	return <Box>Placeholder for nav</Box>;
+	return (
+		<Box>
+			<p>Placeholder for nav</p>
+		</Box>
+	);
 };

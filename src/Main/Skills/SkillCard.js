@@ -16,18 +16,10 @@ import Windows from './SkillsIcons/Windows';
 import ZoomIcon from './SkillsIcons/ZoomIcon';
 
 export default function SkillCard() {
-	const skillTextStyle = {
-		fontSize: '14px',
-		fontStyle: 'normal',
-		fontWeight: '300',
-		lineHeight: '20px' /* 133.333% */,
-	};
-
 	const skillCardStyle = {
 		gap: '1rem',
 		flexDirection: 'column',
 		border: '1px black',
-		// width: '300px',
 	};
 
 	return (
@@ -54,12 +46,10 @@ export default function SkillCard() {
 					</Center>
 				</HStack>
 				<Box>
-					<Heading as='h5' fontSize={'16px'}>
-						Design Skills
-					</Heading>
+					<Heading as={'h4'}>Design Skills</Heading>
 				</Box>
 				<Box>
-					<Text sx={skillTextStyle}>
+					<Text>
 						Experienced graphic designer adept in Adobe Creative Cloud, Figma,
 						and other design software, creating visually compelling solutions
 						with precision and creativity
@@ -85,12 +75,10 @@ export default function SkillCard() {
 					</Center>
 				</HStack>
 				<Box>
-					<Heading as='h5' fontSize={'16px'}>
-						Coding Skills
-					</Heading>
+					<Heading as={'h4'}>Coding Skills</Heading>
 				</Box>
 				<Box>
-					<Text sx={skillTextStyle}>
+					<Text>
 						Proficient in HTML, CSS, and JavaScript, with advanced expertise in
 						React and various frameworks. Adept at creating dynamic, responsive
 						websites
@@ -113,12 +101,10 @@ export default function SkillCard() {
 					</Center>
 				</HStack>
 				<Box>
-					<Heading as='h5' fontSize={'16px'}>
-						Collaboration skills
-					</Heading>
+					<Heading as={'h4'}>Collaboration skills</Heading>
 				</Box>
 				<Box>
-					<Text sx={skillTextStyle}>
+					<Text>
 						Proficient in collaboration tools like Jira and Teams, ensuring
 						seamless project management and effective communication within
 						cross-functional teams

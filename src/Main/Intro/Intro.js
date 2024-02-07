@@ -18,7 +18,7 @@ function Intro() {
 			flexDirection={'column'}
 			alignItems={'center'}>
 			<Flex className='hero-heading' margin={'1em'}>
-				<Heading as='h2' fontSize={{ base: '24px', md: '30px', lg: '40px' }}>
+				<Heading as='h2'>
 					Hi, I am Thomas Caldwell, A Full-Stack Designer
 				</Heading>
 			</Flex>
@@ -39,12 +39,7 @@ function Intro() {
 				</GridItem>
 				<GridItem direction={'column'}>
 					<Flex className='hero-text' padding={{ base: 0, md: 10 }}>
-						<Text
-							color={'var(--gray-700)'}
-							fontSize={['small', 'medium']}
-							fontStyle={'normal'}
-							fontWeight={'400'}
-							lineHeight={'25px'}>
+						<Text as={'p'}>
 							I am a committed and proficient designer with expertise in coding.
 							My capabilities extend to planning, designing, and developing
 							modern, functional websites
@@ -57,7 +52,7 @@ function Intro() {
 						<Button colorScheme='green' size='sm'>
 							Resume
 						</Button>
-						<Button colorScheme='green' size='sm' variant='outlined'>
+						<Button variant={{ base: 'base', sm: 'sm', md: 'md' }}>
 							See Projects
 						</Button>
 					</ButtonGroup>

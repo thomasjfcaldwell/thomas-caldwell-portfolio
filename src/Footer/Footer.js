@@ -57,7 +57,7 @@ function Footer() {
 				gap={8}>
 				<Flex direction={'column'}>
 					<Heading
-						as='h3'
+						as='h1'
 						fontSize={{ base: '24px', md: '30px', lg: '40px' }}
 						fontWeight={'medium'}>
 						thomas caldwell

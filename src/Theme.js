@@ -4,7 +4,7 @@ const theme = extendTheme({
 	styles: {
 		global: {
 			body: {
-				bg: 'gray.100',
+				bg: 'primary.50',
 				margin: '0',
 			},
 			a: {
@@ -13,8 +13,26 @@ const theme = extendTheme({
 					textDecoration: 'underline',
 				},
 			},
+			p: {
+				backgroundColor: 'none',
+			},
+			h1: {
+				backgroundColor: ['blue', 'green', 'yellow', 'purple', 'red'],
+			},
 			h2: {
-				color: 'black.500',
+				backgroundColor: 'green.600',
+			},
+			h3: {
+				backgroundColor: 'green.400',
+			},
+			h4: {
+				backgroundColor: 'green.300',
+			},
+			h5: {
+				backgroundColor: 'green.200',
+			},
+			h6: {
+				backgroundColor: 'green.50',
 			},
 		},
 	},
@@ -48,6 +66,29 @@ const theme = extendTheme({
 		body: 'poppins',
 		heading: 'poppins',
 		mono: 'Menlo, monospace',
+	},
+	components: {
+		Button: {
+			sizes: {
+				sm: {
+					fontSize: 'md',
+				},
+			},
+			variants: {
+				base: {
+					bg: 'yellow.500',
+					fontSize: 'md',
+				},
+				sm: {
+					bg: 'teal.100',
+					fontSize: 'lg',
+				},
+				md: {
+					bg: 'green.900',
+					fontSize: 'xl',
+				},
+			},
+		},
 	},
 });
 export default theme;
