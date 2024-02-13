@@ -4,8 +4,9 @@ const theme = extendTheme({
 	styles: {
 		global: {
 			body: {
-				bg: 'primary.50',
+				bg: 'grey.50',
 				margin: '0',
+				boxSizing: 'border-box',
 			},
 			a: {
 				color: 'teal.500',
@@ -15,6 +16,7 @@ const theme = extendTheme({
 			},
 			p: {
 				backgroundColor: 'none',
+				fontSize: ['10px', '14px', '16px'],
 			},
 			h1: {
 				backgroundColor: ['blue', 'green', 'yellow', 'purple', 'red'],

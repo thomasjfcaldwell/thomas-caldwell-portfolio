@@ -1,5 +1,13 @@
 import React from 'react';
-import { Heading, HStack, Flex, Center, Box, Text } from '@chakra-ui/react';
+import {
+	Heading,
+	HStack,
+	Flex,
+	Center,
+	Box,
+	Text,
+	Grid,
+} from '@chakra-ui/react';
 import FigmaIcon from './SkillsIcons/FigmaIcon';
 import XdIcon from './SkillsIcons/XdIcon';
 import PhotoshopIcon from './SkillsIcons/PhotoshopIcon';
@@ -20,13 +28,13 @@ export default function SkillCard() {
 		gap: '1rem',
 		flexDirection: 'column',
 		border: '1px black',
+		backgroundColor: 'blue.100',
+		height: '450px',
+		padding: '1em',
 	};
 
 	return (
-		<Flex
-			direction={{ base: 'column', lg: 'row' }}
-			justifyContent={{ lg: 'space-evenly' }}
-			gap={4}>
+		<Grid>
 			<Flex sx={skillCardStyle}>
 				<HStack>
 					<Center>
@@ -111,6 +119,6 @@ export default function SkillCard() {
 					</Text>
 				</Box>
 			</Flex>
-		</Flex>
+		</Grid>
 	);
 }

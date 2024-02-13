@@ -1,6 +1,6 @@
 import React from 'react';
 import { HamburgerIcon } from '@chakra-ui/icons';
-import { Box } from '@chakra-ui/react';
+import { Box, Text } from '@chakra-ui/react';
 import { useState, useEffect } from 'react';
 
 export default function Navigation() {
@@ -23,8 +23,8 @@ export default function Navigation() {
 
 const Test = () => {
 	return (
-		<Box>
-			<p>Placeholder for nav</p>
+		<Box bg={'green'}>
+			<Text>bum</Text>
 		</Box>
 	);
 };
