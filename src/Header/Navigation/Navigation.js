@@ -4,6 +4,7 @@ import { Box, Flex, Text } from '@chakra-ui/react';
 import { useState, useEffect } from 'react';
 import { Link } from '@chakra-ui/react';
 import { UnlockIcon } from '@chakra-ui/icons';
+import ThemeToggle from '../ThemeToggle/ThemeToggle';
 
 export default function Navigation() {
 	const [isLargeScreen, setIsLargeScreen] = useState(
@@ -51,6 +52,9 @@ const MainNav = () => {
 					Contact
 					<UnlockIcon mx='2px' />
 				</Link>
+			</Box>
+			<Box>
+				<ThemeToggle />
 			</Box>
 		</Flex>
 	);

@@ -28,6 +28,8 @@ const theme = extendTheme({
 			},
 			h2: {
 				backgroundColor: 'green.600',
+				fontSize: '24px',
+				fontWeight: '700',
 			},
 			h3: {
 				backgroundColor: 'green.400',

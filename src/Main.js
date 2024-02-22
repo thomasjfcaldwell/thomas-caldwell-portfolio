@@ -15,10 +15,10 @@ function Main() {
 	return (
 		<Flex as='main' sx={mainStyle}>
 			<Intro />
-			<Work />
+			{/* <Work />
 			<Employment />
 			<Skills />
-			<Contact />
+			<Contact /> */}
 		</Flex>
 	);
 }

@@ -10,8 +10,8 @@ export default function ThemeToggle() {
 			align={'center'}
 			width={'200px'}
 			justify={'flex-end'}
-			gap={2}>
-			<Text>Light/Dark</Text>
+			gap={2}
+			mr={'10px'}>
 			<MoonIcon onClick={toggleColorMode}>
 				{colorMode === 'light' ? 'Dark' : 'Light'}
 			</MoonIcon>

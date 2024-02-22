@@ -22,7 +22,6 @@ function Header() {
 					<Logo />
 					<Navigation />
 				</Flex>
-				<ThemeToggle />
 			</Flex>
 		</Box>
 	);
