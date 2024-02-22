@@ -52,9 +52,6 @@ function Intro() {
 						<Button colorScheme='green' size='sm'>
 							Resume
 						</Button>
-						<Button variant={{ base: 'base', sm: 'sm', md: 'md' }}>
-							See Projects
-						</Button>
 					</ButtonGroup>
 				</GridItem>
 			</Grid>

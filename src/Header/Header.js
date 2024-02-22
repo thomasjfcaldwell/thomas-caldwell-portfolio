@@ -1,20 +1,30 @@
 import Logo from './Logo/Logo';
 import Navigation from './Navigation/Navigation';
-import { Flex } from '@chakra-ui/react';
+import ThemeToggle from './ThemeToggle/ThemeToggle';
+import { Flex, Box } from '@chakra-ui/react';
 function Header() {
 	const headerStyle = {
-		flexDirection: 'row',
-		padding: '1rem',
-		justifyContent: 'space-between',
-		alignItems: 'center',
-		alignSelf: 'stretch',
+		width: '100%',
+		maxWidth: '1440px',
+		margin: '0 auto',
+		padding: '10px',
 		border: 'none',
 	};
 	return (
-		<Flex as='header' className='header' sx={headerStyle}>
-			<Logo />
-			<Navigation />
-		</Flex>
+		<Box as='header' className='header' sx={headerStyle}>
+			<Flex
+				p={5}
+				align='center'
+				justify='space-between'
+				h={'100px'}
+				width={'100%'}>
+				<Flex justify='space-between' align='center' width={'100%'}>
+					<Logo />
+					<Navigation />
+				</Flex>
+				<ThemeToggle />
+			</Flex>
+		</Box>
 	);
 }
 

@@ -1,10 +1,14 @@
 import { extendTheme } from '@chakra-ui/react';
+const config = {
+	initialColorMode: 'light',
+	useSystemColorMode: false,
+};
 
 const theme = extendTheme({
+	config,
 	styles: {
 		global: {
 			body: {
-				bg: 'grey.50',
 				margin: '0',
 				boxSizing: 'border-box',
 			},
@@ -12,6 +16,7 @@ const theme = extendTheme({
 				color: 'teal.500',
 				_hover: {
 					textDecoration: 'underline',
+					color: 'primary.500',
 				},
 			},
 			p: {
