@@ -16,9 +16,11 @@ export default function Position() {
 			templateColumns={{
 				base: 'repeat(1fr)',
 				md: 'repeat(2, 1fr)',
-				lg: 'repeat(4, 1fr)',
+				xl: 'repeat(4, 1fr)',
 			}}
-			gap={3}>
+			gap={3}
+			p={2}
+			bg={'gray.100'}>
 			{Jobs.map((job) => {
 				return (
 					<GridItem key={job.id}>

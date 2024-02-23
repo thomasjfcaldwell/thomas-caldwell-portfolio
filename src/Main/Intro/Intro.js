@@ -10,35 +10,49 @@ import {
 import thomasPhoto from '../../SVG/Asset 1.svg';
 
 function Intro() {
+	const sectionStyle = {
+		flexDirection: 'column',
+		margin: '0 auto',
+		width: '100%',
+		maxWidth: '1440px',
+		minWidth: '300px',
+	};
+
+	const heroHeadingStyle = {
+		padding: '30px 10px',
+		alignSelf: 'stretch',
+		alignItems: 'center',
+	};
+
+	const imageContainerStyle = {
+		justifyContent: 'center',
+		display: 'flex',
+		height: '300px',
+		alignSelf: 'stretch',
+	};
+	const contentContainer = {
+		display: 'flex',
+		flexDirection: 'column',
+		alignItems: { base: 'center' },
+		backgroundColor: { base: 'pink', sm: 'purple', lg: 'red', xl: 'brown' },
+	};
+
 	return (
-		<Flex
-			as='section'
-			className='intro'
-			flexDirection={'column'}
-			margin={'0 auto'}
-			width={'100%'}
-			maxWidth={'1440px'}
-			minWidth={'370px'}>
-			<Flex className='hero-heading' marginBlock={'1em'}>
-				<Text as={'h2'}>Hi, I am Thomas Caldwell, A Full-Stack Designer</Text>
-			</Flex>
+		<Flex as='section' className='intro' sx={sectionStyle}>
 			<Grid
 				templateColumns={{ base: '1fr', md: '1fr 2fr' }}
 				paddingInline={{ base: 0, md: 10 }}
 				gap={10}>
-				<GridItem
-					justifyContent={'center'}
-					borderRadius={2}
-					className='hero-image'>
-					<Image
-						src={thomasPhoto}
-						alt='Photo Of Thomas'
-						borderRadius={10}
-						width={'75%'}
-					/>
+				<GridItem className='hero-image' sx={imageContainerStyle}>
+					<Image src={thomasPhoto} alt='Photo Of Thomas' />
 				</GridItem>
-				<GridItem direction={'column'}>
-					<Flex className='hero-text' padding={{ base: 0 }}>
+				<GridItem gap={4} sx={contentContainer}>
+					<Flex className='hero-heading' sx={heroHeadingStyle}>
+						<Text as={'h2'}>
+							Hi, I am Thomas Caldwell, A Full-Stack Designer
+						</Text>
+					</Flex>
+					<Flex className='hero-text' padding={{ base: '0px 20px' }}>
 						<Text as={'p'}>
 							I am a committed and proficient designer with expertise in coding.
 							My capabilities extend to planning, designing, and developing

@@ -21,11 +21,14 @@ const theme = extendTheme({
 			},
 			p: {
 				backgroundColor: 'none',
-				fontSize: ['10px', '14px', '16px'],
+				fontSize: ['14px', '18px', '20px'],
+				color: 'gray.500',
+				fontWeight: '500',
 			},
 			h1: {
 				backgroundColor: ['blue', 'green', 'yellow', 'purple', 'red'],
 			},
+
 			h2: {
 				backgroundColor: 'green.600',
 				fontSize: '24px',
@@ -39,9 +42,11 @@ const theme = extendTheme({
 			},
 			h5: {
 				backgroundColor: 'green.200',
+				fontSize: '14px',
 			},
 			h6: {
 				backgroundColor: 'green.50',
+				fontSize: '10px',
 			},
 		},
 	},
