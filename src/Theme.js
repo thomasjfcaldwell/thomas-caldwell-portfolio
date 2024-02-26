@@ -26,7 +26,7 @@ const theme = extendTheme({
 				fontWeight: '500',
 			},
 			h1: {
-				backgroundColor: ['blue', 'green', 'yellow', 'purple', 'red'],
+				fontSize: '25px',
 			},
 
 			h2: {

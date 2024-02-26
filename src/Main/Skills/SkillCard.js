@@ -28,13 +28,18 @@ export default function SkillCard() {
 		gap: '1rem',
 		flexDirection: 'column',
 		border: '1px black',
-		backgroundColor: 'blue.100',
-		height: '450px',
-		padding: '1em',
+		height: '100%',
+		minHeight: '200px',
+		padding: ['10px', '20px'],
+		backgroundColor: 'white',
 	};
 
 	return (
-		<Grid>
+		<Grid
+			bg={'gray.100'}
+			padding={2}
+			gap={2}
+			templateColumns={{ base: '1fr', lg: 'repeat(3, 1fr)' }}>
 			<Flex sx={skillCardStyle}>
 				<HStack>
 					<Center>
@@ -54,7 +59,7 @@ export default function SkillCard() {
 					</Center>
 				</HStack>
 				<Box>
-					<Heading as={'h4'}>Design Skills</Heading>
+					<Text>Design Skills</Text>
 				</Box>
 				<Box>
 					<Text>
@@ -83,7 +88,7 @@ export default function SkillCard() {
 					</Center>
 				</HStack>
 				<Box>
-					<Heading as={'h4'}>Coding Skills</Heading>
+					<Text>Coding Skills</Text>
 				</Box>
 				<Box>
 					<Text>
@@ -109,7 +114,7 @@ export default function SkillCard() {
 					</Center>
 				</HStack>
 				<Box>
-					<Heading as={'h4'}>Collaboration skills</Heading>
+					<Text>Collaboration skills</Text>
 				</Box>
 				<Box>
 					<Text>

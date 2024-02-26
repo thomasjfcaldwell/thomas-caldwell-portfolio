@@ -24,17 +24,26 @@ export default function Position() {
 			{Jobs.map((job) => {
 				return (
 					<GridItem key={job.id}>
-						<Card className='job_card' padding={3} gap={2} height={'100%'}>
-							<CardHeader padding={0} display={'flex'} gap={1} marginTop='1em'>
-								<Heading as='h5'>{job.company}</Heading>
+						<Card
+							className='job_card'
+							padding={{ base: '10px', md: '20px' }}
+							gap={3}
+							overflow='hidden'
+							height='100%'>
+							<CardHeader padding={0} display={'flex'} gap={1}>
+								<Heading as='h5' fontSize={'10px'}>
+									{job.company}
+								</Heading>
 								<Text as={'h6'}>{job.location}</Text>
 							</CardHeader>
 							<Flex justify={'space-between'}>
 								<Text as='h5'>{job.position}</Text>
 								<Text as='h6'>{job.date_rage}</Text>
 							</Flex>
-							<CardBody marginBottom='1em' p={0}>
-								<Text as={'p'}>{job.description}</Text>
+							<CardBody p={0}>
+								<Text as={'p'} fontSize={('14px', '12px')}>
+									{job.description}
+								</Text>
 							</CardBody>
 						</Card>
 					</GridItem>

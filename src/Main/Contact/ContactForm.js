@@ -3,10 +3,13 @@ import { Box, FormControl, FormLabel, Input, Textarea } from '@chakra-ui/react';
 
 export default function ContactForm() {
 	return (
-		<Box width={'100%'} padding={2}>
+		<Box
+			width={{ base: '100%', md: '80%', lg: '50%' }}
+			margin={'0 auto'}
+			padding={2}>
 			<FormControl>
 				<FormLabel>Name</FormLabel>
-				<Input variant='flushed' type='text' size='sm' />
+				<Input type='text' size='sm' />
 			</FormControl>
 			<FormControl>
 				<FormLabel>Email address</FormLabel>

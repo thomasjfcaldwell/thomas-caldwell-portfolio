@@ -56,10 +56,7 @@ function Footer() {
 				padding={{ base: '1em', lg: '2em' }}
 				gap={8}>
 				<Flex direction={'column'}>
-					<Heading
-						as='h1'
-						fontSize={{ base: '24px', md: '30px', lg: '40px' }}
-						fontWeight={'medium'}>
+					<Heading as='h1' fontWeight={'bold'}>
 						thomas caldwell
 					</Heading>
 					<List display='flex' padding={1}>
