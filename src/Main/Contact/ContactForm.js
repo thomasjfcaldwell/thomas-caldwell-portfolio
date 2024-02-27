@@ -9,11 +9,11 @@ export default function ContactForm() {
 			padding={2}>
 			<FormControl>
 				<FormLabel>Name</FormLabel>
-				<Input type='text' size='sm' />
+				<Input size='sm' type='text' />
 			</FormControl>
 			<FormControl>
 				<FormLabel>Email address</FormLabel>
-				<Input type='email' size='sm' />
+				<Input size='sm' type='email' />
 			</FormControl>
 			<FormControl>
 				<FormLabel>Message</FormLabel>
