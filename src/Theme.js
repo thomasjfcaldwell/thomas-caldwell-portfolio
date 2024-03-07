@@ -6,46 +6,45 @@ const config = {
 
 const theme = extendTheme({
 	config,
+	breakpoints: {
+		base: '0px',
+		sm: '375px',
+		md: '768px',
+		lg: '960px',
+		xl: '1200px',
+		'2xl': '1536px',
+	},
 	styles: {
 		global: {
 			body: {
 				margin: '0',
 				boxSizing: 'border-box',
+				fontSize: '14px',
 			},
 			a: {
 				color: 'teal.500',
-				_hover: {
-					textDecoration: 'underline',
-					color: 'primary.500',
-				},
 			},
 			p: {
-				backgroundColor: 'none',
-				fontSize: ['14px', '18px', '20px'],
+				fontSize: ['0.7em', '0.7em', '0.8em', '1em', '1.2em', '1.9em'],
 				color: 'gray.500',
 				fontWeight: '500',
 			},
 			h1: {
-				fontSize: '25px',
+				fontSize: ['14px', '25px', '40px'],
 			},
-
 			h2: {
-				backgroundColor: 'green.600',
-				fontSize: '24px',
+				fontSize: ['21px', '24px', '29px', '23px', '32px'],
 				fontWeight: '700',
 			},
 			h3: {
-				backgroundColor: 'green.400',
+				fontSize: '15px',
+				fontWeight: '600',
 			},
-			h4: {
-				backgroundColor: 'green.300',
-			},
+			h4: {},
 			h5: {
-				backgroundColor: 'green.200',
-				fontSize: '14px',
+				fontSize: ['14px', '16px', '17px'],
 			},
 			h6: {
-				backgroundColor: 'green.50',
 				fontSize: '10px',
 			},
 		},
@@ -82,24 +81,33 @@ const theme = extendTheme({
 		mono: 'Menlo, monospace',
 	},
 	components: {
-		Button: {
-			sizes: {
-				sm: {
-					fontSize: 'md',
+		Text: {
+			variants: {
+				sectionTitle: {
+					fontSize: '30px',
+					backgroundColor: 'white',
+					fontFamily: 'fonts.mono',
 				},
 			},
+		},
+		Link: {
 			variants: {
-				base: {
-					bg: 'yellow.500',
-					fontSize: 'md',
+				navLink: {
+					fontSize: '14px',
+					color: 'gray.400',
 				},
-				sm: {
-					bg: 'teal.100',
-					fontSize: 'lg',
+			},
+		},
+		Button: {
+			variants: {
+				workButton: {
+					bg: 'primary.100',
+					fontSize: '10px',
 				},
-				md: {
-					bg: 'green.900',
-					fontSize: 'xl',
+				contactButton: {
+					bg: 'primary.200',
+					fontSize: '14px',
+					width: '100%',
 				},
 			},
 		},

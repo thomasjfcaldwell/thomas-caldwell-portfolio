@@ -13,13 +13,13 @@ export default function Picnics() {
 				<Box>
 					<Card>
 						<CardHeader>
-							<Heading as={'h4'}>Local Business Website</Heading>
-							<Box display={'flex'} gap={4}>
-								<Text as={'h4'}>www.popup-picnics.com</Text>
-								<Text as={'h5'}>2021 - Present</Text>
+							<Text as='h3'>Local Business Website</Text>
+							<Box display={'flex'} gap={2} alignItems={'center'}>
+								<Text as={'h5'}>www.popup-picnics.com</Text>
+								<Text as={'h6'}>2021 - Present</Text>
 							</Box>
 						</CardHeader>
-						<CardBody>
+						<CardBody gap={1} display='flex' flexDirection='column'>
 							<Box>
 								<Text as={'p'}>
 									Crafted for a local business adapting to government
@@ -28,7 +28,7 @@ export default function Picnics() {
 									income-generating service, distinct from their main site
 								</Text>
 							</Box>
-							<Box my={5}>
+							<Box>
 								<Text as={'p'}>
 									This venture entailed collaborative planning and design
 									sessions with the business owner, where Figma prototypes were
@@ -36,7 +36,7 @@ export default function Picnics() {
 									utilized React and Material UI for seamless development
 								</Text>
 							</Box>
-							<Box>
+							<Box paddingBlock={2}>
 								<Box>
 									<Text>Technology Used</Text>
 								</Box>
@@ -60,7 +60,7 @@ export default function Picnics() {
 							</Box>
 						</CardBody>
 						<CardFooter>
-							<Button>See More</Button>
+							<Button variant={'workButton'}>See More</Button>
 						</CardFooter>
 					</Card>
 				</Box>

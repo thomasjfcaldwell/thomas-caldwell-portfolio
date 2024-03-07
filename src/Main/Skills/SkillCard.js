@@ -29,8 +29,8 @@ export default function SkillCard() {
 		flexDirection: 'column',
 		border: '1px black',
 		height: '100%',
-		minHeight: '200px',
-		padding: ['10px', '20px'],
+		minHeight: '170px',
+		padding: ['1em', '1.2em', '1.5em', '2em'],
 		backgroundColor: 'white',
 	};
 
@@ -39,7 +39,7 @@ export default function SkillCard() {
 			bg={'gray.100'}
 			padding={2}
 			gap={2}
-			templateColumns={{ base: '1fr', lg: 'repeat(3, 1fr)' }}>
+			templateColumns={{ base: '1fr', md: 'repeat(3, 1fr)' }}>
 			<Flex sx={skillCardStyle}>
 				<HStack>
 					<Center>
@@ -59,10 +59,10 @@ export default function SkillCard() {
 					</Center>
 				</HStack>
 				<Box>
-					<Text>Design Skills</Text>
+					<Text as='h5'>Design Skills</Text>
 				</Box>
 				<Box>
-					<Text>
+					<Text as={'p'}>
 						Experienced graphic designer adept in Adobe Creative Cloud, Figma,
 						and other design software, creating visually compelling solutions
 						with precision and creativity
@@ -88,10 +88,10 @@ export default function SkillCard() {
 					</Center>
 				</HStack>
 				<Box>
-					<Text>Coding Skills</Text>
+					<Text as='h5'>Coding Skills</Text>
 				</Box>
 				<Box>
-					<Text>
+					<Text as={'p'}>
 						Proficient in HTML, CSS, and JavaScript, with advanced expertise in
 						React and various frameworks. Adept at creating dynamic, responsive
 						websites
@@ -114,10 +114,10 @@ export default function SkillCard() {
 					</Center>
 				</HStack>
 				<Box>
-					<Text>Collaboration skills</Text>
+					<Text as='h5'>Collaboration skills</Text>
 				</Box>
 				<Box>
-					<Text>
+					<Text as={'p'}>
 						Proficient in collaboration tools like Jira and Teams, ensuring
 						seamless project management and effective communication within
 						cross-functional teams

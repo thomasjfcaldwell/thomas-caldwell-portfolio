@@ -14,7 +14,7 @@ export default function Contact() {
 			<SectionHeader title='Contact Me!' />
 			<ContactForm />
 			<Flex justify={'center'} p={4}>
-				<Button display='inline'>Send</Button>
+				<Button variant={'contactButton'}>Send</Button>
 			</Flex>
 		</Flex>
 	);

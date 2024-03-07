@@ -28,34 +28,34 @@ export default function Navigation() {
 const MainNav = () => {
 	return (
 		<Flex
-			bg={'green'}
 			width={'100%'}
 			direction={{ base: 'column', lg: 'row' }}
+			alignItems={'center'}
 			gap={10}>
-			<Box>
-				<Link href='https://chakra-ui.com' isExternal>
-					Projects <UnlockIcon />
+			<Flex alignItems={'center'}>
+				<Link href='https://chakra-ui.com' isExternal variant={'navLink'}>
+					Projects <UnlockIcon ml='10px' mt='-5px' />
 				</Link>
-			</Box>
-			<Box>
-				<Link href='https://chakra-ui.com' isExternal>
-					Work Experience <UnlockIcon mx='2px' />
+			</Flex>
+			<Flex>
+				<Link href='https://chakra-ui.com' isExternal variant={'navLink'}>
+					Work Experience <UnlockIcon ml='10px' mt='-5px' />
 				</Link>
-			</Box>
-			<Box>
-				<Link href='https://chakra-ui.com' isExternal>
-					About Me <UnlockIcon mx='2px' />
+			</Flex>
+			<Flex>
+				<Link href='https://chakra-ui.com' isExternal variant={'navLink'}>
+					About Me <UnlockIcon ml='10px' mt='-5px' />
 				</Link>
-			</Box>
-			<Box>
-				<Link href='https://chakra-ui.com' isExternal>
+			</Flex>
+			<Flex>
+				<Link href='https://chakra-ui.com' isExternal variant={'navLink'}>
 					Contact
-					<UnlockIcon mx='2px' />
+					<UnlockIcon ml='10px' mt='-5px' />
 				</Link>
-			</Box>
-			<Box>
+			</Flex>
+			<Flex>
 				<ThemeToggle />
-			</Box>
+			</Flex>
 		</Flex>
 	);
 };

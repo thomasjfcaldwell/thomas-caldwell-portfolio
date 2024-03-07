@@ -3,8 +3,8 @@ import React from 'react';
 
 export default function SectionHeader(props) {
 	return (
-		<Flex marginBlock={'1em'}>
-			<Text fontSize={'10px'}>{props.title}</Text>
+		<Flex marginBlock={'1em'} justify={'center'} alignItems={'center'}>
+			<Text variant={'sectionTitle'}>{props.title}</Text>
 		</Flex>
 	);
 }

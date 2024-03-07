@@ -30,20 +30,20 @@ export default function Position() {
 							gap={3}
 							overflow='hidden'
 							height='100%'>
-							<CardHeader padding={0} display={'flex'} gap={1}>
-								<Heading as='h5' fontSize={'10px'}>
-									{job.company}
-								</Heading>
-								<Text as={'h6'}>{job.location}</Text>
+							<CardHeader
+								padding={0}
+								display={'flex'}
+								gap={1}
+								alignItems={'center'}>
+								<Text as='h3'>{job.company}</Text>
+								<Text as='h6'>{job.location}</Text>
 							</CardHeader>
-							<Flex justify={'space-between'}>
+							<Flex justify={'space-between'} alignItems={'center'}>
 								<Text as='h5'>{job.position}</Text>
 								<Text as='h6'>{job.date_rage}</Text>
 							</Flex>
 							<CardBody p={0}>
-								<Text as={'p'} fontSize={('14px', '12px')}>
-									{job.description}
-								</Text>
+								<Text as={'p'}>{job.description}</Text>
 							</CardBody>
 						</Card>
 					</GridItem>

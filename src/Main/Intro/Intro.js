@@ -19,7 +19,6 @@ function Intro() {
 	};
 
 	const heroHeadingStyle = {
-		padding: '30px 10px',
 		alignSelf: 'stretch',
 		alignItems: 'center',
 	};
@@ -30,11 +29,11 @@ function Intro() {
 		height: '300px',
 		alignSelf: 'stretch',
 	};
-	const contentContainer = {
+	const contentContainerStyle = {
 		display: 'flex',
 		flexDirection: 'column',
 		alignItems: { base: 'center' },
-		backgroundColor: { base: 'pink', sm: 'purple', lg: 'red', xl: 'brown' },
+		padding: 2,
 	};
 
 	return (
@@ -42,17 +41,18 @@ function Intro() {
 			<Grid
 				templateColumns={{ base: '1fr', md: '1fr 2fr' }}
 				paddingInline={{ base: 0, md: 10 }}
-				gap={10}>
+				gap={10}
+				alignItems={'center'}>
 				<GridItem className='hero-image' sx={imageContainerStyle}>
 					<Image src={thomasPhoto} alt='Photo Of Thomas' />
 				</GridItem>
-				<GridItem gap={4} sx={contentContainer}>
+				<GridItem gap={4} sx={contentContainerStyle}>
 					<Flex className='hero-heading' sx={heroHeadingStyle}>
 						<Text as={'h2'}>
 							Hi, I am Thomas Caldwell, A Full-Stack Designer
 						</Text>
 					</Flex>
-					<Flex className='hero-text' padding={{ base: '0px 20px' }}>
+					<Flex className='hero-text'>
 						<Text as={'p'}>
 							I am a committed and proficient designer with expertise in coding.
 							My capabilities extend to planning, designing, and developing
